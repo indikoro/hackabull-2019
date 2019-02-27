@@ -11,6 +11,7 @@ font-size: 1.2em;
 text-align: center;
 background-image: url(../images/bg.svg);
 background-position: center bottom;
+background-repeat: no-repeat;
 }
 
 h1 {
@@ -124,7 +125,7 @@ padding-bottom: 20px;
 }
 
 .team-push {
-margin-top: 20px;
+margin-top: 30px;
 }
 
 .footer-link {
@@ -163,4 +164,9 @@ width: 200px;
 
 .second-section {
 margin-bottom: 20px;
+}
+
+.clip-circle {
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
 }
