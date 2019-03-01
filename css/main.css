@@ -167,6 +167,10 @@ font-size: .85em;
 text-align: left;
 }
 
+.leftleft {
+  text-align: left;
+}
+
 .navy-h1 {
 color: #1A3A69;
 }
@@ -192,6 +196,10 @@ color: #F5FAFF !important;
 background: #289674;
 border: none;
 width: 200px;
+}
+
+.carousel-inner {
+  border-radius: 35px;
 }
 
 .second-section {
