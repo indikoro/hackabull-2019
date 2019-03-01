@@ -235,3 +235,19 @@ margin-bottom: 20px;
 .faq-q {
   font-size: 1.2em;
 }
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+  0% {
+    transform: translateY(0px);
+  }
+}
+
+.img-float {
+  animation: float 3s ease-in-out infinite;
+}
