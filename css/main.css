@@ -11,6 +11,7 @@ font-size: 1.2em;
 text-align: center;
 background-image: url(../images/bg.svg);
 background-position: center bottom;
+background-repeat: no-repeat;
 }
 
 h1 {
@@ -27,6 +28,22 @@ h1 {
 }
 }
 
+a, .obj-scale {
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .2s ease-in-out; 
+}
+
+a:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+.obj-scale:hover {
+  transition: scale(1.1) !important;
+}
+
 .nav-item {
 padding-left: 10px;
 padding-right: 10px;
@@ -38,6 +55,7 @@ color: #596AAE !important;
 
 .nav-light, a:hover {
 color: #1A3A69 !important;
+transition: scale(1.1);
 }
 
 .custom-toggler.navbar-toggler {
@@ -124,17 +142,33 @@ padding-bottom: 20px;
 }
 
 .team-push {
-margin-top: 20px;
+margin-top: 30px;
 }
 
 .footer-link {
-color: #1A3A69 !important;
+color: rgb(181, 240, 255) !important;
+-webkit-transition: all .5s ease-in-out;
+-moz-transition: all .5s ease-in-out;
+-o-transition: all .5s ease-in-out;
+transition: all .2s ease-in-out; 
+
 }
+
+.footer-link:hover {
+color: #F5FAFF !important;
+text-decoration: none;
+transition: scale(1.1);
+}
+
 
 .faq {
 margin-top: 30px;
 font-size: .85em;
 text-align: left;
+}
+
+.leftleft {
+  text-align: left;
 }
 
 .navy-h1 {
@@ -146,11 +180,14 @@ color: #F5FAFF !important;
 background: #289674;
 border: none;
 width: 200px;
+border-radius: 25px;
+box-shadow: inset 0 2px 0 rgb(39, 196, 162) !important;
+box-shadow: 0 1px 3px hsla(0, 0%, 0%, .2);
 }
 
 .btn-primary:hover {
 color: #F5FAFF !important;
-background: #00CFA0;
+background: rgb(10, 172, 158);
 border: none;
 }
 
@@ -161,6 +198,56 @@ border: none;
 width: 200px;
 }
 
+.carousel-inner {
+  border-radius: 35px;
+}
+
 .second-section {
 margin-bottom: 20px;
+}
+
+.clip-circle {
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+}
+
+.grow { 
+  transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+  transform: scale(1.1); 
+}
+
+.h1-bottom {
+  color: #064e57;
+}
+
+.btn:hover {
+  transform: scale(1);
+}
+
+.hint {
+  color: rgb(49, 86, 143);
+  font-size: 0.9em !important;
+}
+
+.faq-q {
+  font-size: 1.2em;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+  0% {
+    transform: translateY(0px);
+  }
+}
+
+.img-float {
+  animation: float 3s ease-in-out infinite;
 }
