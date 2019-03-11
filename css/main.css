@@ -116,6 +116,10 @@ margin-top: 30px;
 margin-top: 50px;
 }
 
+.col-smol-push {
+  margin-top: 20px;
+}
+
 .smash-max {
 max-width: 700px;
 }
@@ -250,4 +254,24 @@ margin-bottom: 20px;
 
 .img-float {
   animation: float 3s ease-in-out infinite;
+}
+
+/* Resize large sponsors to 50px height on tablet */
+@media (max-width: 768px) {
+  .img-fit {
+    height: 70px;
+  }
+}
+
+/* Resize large sponsors to 30px height on mobile */
+@media (max-width: 576px) {
+  .img-fit {
+    height: 50px;
+  }
+}
+
+.h2-bottom {
+  font-family: 'Lilita One', sans-serif;
+  font-size: 1.8em;
+  margin-top: 50px;
 }
