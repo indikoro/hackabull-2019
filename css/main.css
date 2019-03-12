@@ -275,3 +275,16 @@ margin-bottom: 20px;
   font-size: 1.8em;
   margin-top: 60px;
 }
+
+.schedule {
+  background-color: #ffffff;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  border-radius: 10px;
+}
+
+h4 {
+  margin-top: 30px;
+}
