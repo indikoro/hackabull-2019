@@ -290,3 +290,17 @@ margin-bottom: 20px;
 h4 {
   margin-top: 30px;
 }
+
+/* closed registration button */
+.closed {
+	background-color:transparent;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #289673;
+	display:inline-block;
+	color:#289673;
+	font-size:18px;
+	padding:14px 35px;
+	text-decoration:none;
+}
